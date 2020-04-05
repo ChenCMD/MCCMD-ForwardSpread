@@ -9,3 +9,4 @@ scoreboard players set #10000 ForwardSpread 10000
 scoreboard players set #1000 ForwardSpread 1000
 
 execute unless entity 0-0-0-0-a run summon minecraft:area_effect_cloud 0 0 0 {Age:-2147483648,Duration:-1,WaitTime:-2147483648,UUIDLeast:10L,UUIDMost:0L}
+#execute unless entity 0-0-0-0-a run summon minecraft:armor_stand 0 0 0 {Marker:1b,Small:1b,UUIDLeast:10L,UUIDMost:0L}

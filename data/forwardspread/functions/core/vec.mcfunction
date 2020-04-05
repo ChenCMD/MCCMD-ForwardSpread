@@ -1,9 +1,3 @@
-function forwardspread:core/random
-scoreboard players operation #vexX ForwardSpread = #Rand_Out ForwardSpread
-
-function forwardspread:core/random
-scoreboard players operation #vexY ForwardSpread = #Rand_Out ForwardSpread
-
 scoreboard players operation #vexZ ForwardSpread = #distanceC ForwardSpread
 
 scoreboard players operation #Y ForwardSpread = #vexY ForwardSpread
