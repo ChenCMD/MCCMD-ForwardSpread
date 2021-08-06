@@ -8,6 +8,8 @@
 # @private
 #declare tag Random
 
+# 初期化フラグ
+    data modify storage forward_spreader: RNGInit set value true
 # ランダムシード取得用Entityを召喚
     summon marker ~ ~ ~ {Tags:["Random"]}
 # 負荷軽減用にstorageに入れる

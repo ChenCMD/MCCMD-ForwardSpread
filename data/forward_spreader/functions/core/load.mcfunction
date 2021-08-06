@@ -27,4 +27,4 @@ scoreboard players set $31743 ForwardSpreader 31743
 scoreboard players set $65535 ForwardSpreader 65535
 
 # init random number generator
-    function forward_spreader:core/random/init
+    execute unless data storage forward_spreader: {RNGInit:true} run function forward_spreader:core/random/init
