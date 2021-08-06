@@ -9,7 +9,7 @@ forceload add 0 0
 #> Process used UUIDEntity
 # @internal
 #alias uuid Process 0-0-0-0-a
-execute unless entity 0-0-0-0-a run summon marker 0 0 0 {UUID:[I;0,0,0,10]}
+execute unless entity 0-0-0-0-a run summon area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,UUID:[I;0,0,0,10]}
 
 #> Process used Objective
 # @internal

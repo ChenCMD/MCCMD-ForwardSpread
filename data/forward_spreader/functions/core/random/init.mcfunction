@@ -11,12 +11,12 @@
 # 初期化フラグ
     data modify storage forward_spreader: RNGInit set value true
 # ランダムシード取得用Entityを召喚
-    summon marker ~ ~ ~ {Tags:["Random"]}
+    summon area_effect_cloud ~ ~ ~ {Age:-2147483648,Duration:-1,WaitTime:-2147483648,Tags:["Random"]}
 # 負荷軽減用にstorageに入れる
-    data modify storage forward_spreader: UUID set from entity @e[type=marker,tag=Random,limit=1]
+    data modify storage forward_spreader: UUID set from entity @e[type=area_effect_cloud,tag=Random,limit=1]
 # シードとして代入
     execute store result score $Random.Base ForwardSpreader run data get entity @e[tag=Random,limit=1] UUID[1]
     execute store result score $Random.Carry ForwardSpreader run data get entity @e[tag=Random,limit=1] UUID[3]
 # リセット
     data remove storage forward_spreader: UUID
-    kill @e[type=marker,tag=Random,limit=1]
+    kill @e[type=area_effect_cloud,tag=Random,limit=1]
