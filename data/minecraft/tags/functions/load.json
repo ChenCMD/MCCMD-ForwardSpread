@@ -1,5 +1,5 @@
 {
     "values": [
-        "forwardspread:core/load"
+        "forward_spreader:core/load"
     ]
 }
